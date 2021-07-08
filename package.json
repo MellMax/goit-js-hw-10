@@ -4,6 +4,7 @@
   "description": "**Читать на других языках: [Русский](README.md), [Українська](README.ua.md).**",
   "main": ".posthtmlrc.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],

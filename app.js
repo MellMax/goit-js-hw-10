@@ -2,6 +2,8 @@ const express = require('express');
 const exhbs = require('express-handlebars');
 const products = require('./menu.json');
 
+const PORT = process.env.PORT || 2121;
+
 const app = express();
 
 
@@ -32,7 +34,7 @@ app.get('/product/:productId', (req, res) => {
     res.render('product', {product})
 } );
 
-app.listen(2121, () => {
+app.listen(PORT, () => {
     console.log(`Application server is running on port ${2121}`);
 
 });
